@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="taskerTodo">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tasker TODO</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="./css/font-awesome.min.css">
+
+</head>
+<body ng-controller="mainController">
+	<nav class="navbar sidebar-closed" id="sidebar">
+		<h3><i class="fa fa-check-square-o"></i> Tasker</h3>
+	</nav>
+
+	<section class="frame sidebar-closed" id="container">
+		<i class="fa fa-navicon fa-2x container" data-toggle-name="sidebar" id="toggleSidebar"></i>
+
+		<h1>What do you have to do?</h1>
+		<form>
+      <div>
+        <input type="text" placeholder="Put your task inside" ng-model="formData.text">
+      </div>
+      <button type="submit" ng-click="createTodo()" class="btn big darkgrey">Add</button>
+	  </form>
+	
+		<h4>You have <span>{{ todos.length }}</span> pending tasks</h4>
+		<div class="checkbox frame" ng-repeat="todo in todos">
+	    <label>
+	        <input type="checkbox" ng-click="deleteTodo(todo._id)"> {{ todo.text }}
+	    </label>
+	  </div>
+
+	    
+
+		
+	</section>
+	
+	
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!--load angular-->
+	<script src="./js/jquery-2.1.1.min.js"></script><!--load jquery-->
+  <script src="./core.js"></script>
+  
+
+</body>
+</html>
