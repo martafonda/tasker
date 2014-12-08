@@ -1,0 +1,152 @@
+body{
+	background-color: #4ba9c9;
+	font-family: 'Open Sans', sans-serif;
+  margin-top: 0;
+  margin-left: 0;
+}
+h1{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 32px;
+  margin: 5px;
+}
+
+/* GRID */
+.frame {
+  width: 95%;
+  margin: 0px auto;
+}
+.col-12 {
+  width: 100%;
+}
+.col-11 {
+  width: 50%;
+}
+.col-10 {
+  width: 33.33%;
+}
+.col-9 {
+  width: 25%;
+}
+.col-8 {
+  width: 20%;
+}
+.col-7 {
+  width: 16.6666666667%;
+}
+.col-6 {
+  width: 14.2857142857%;
+}
+.col-5 {
+  width: 12.5%;
+}
+.col-4 {
+  width: 11.1111111111%;
+}
+.col-3 {
+  width: 10%;
+}
+.col-2 {
+  width: 9.09090909091%;
+}
+.col-1 {
+  width: 8.33%;
+}
+
+/* Navbar */
+.navbar{
+	background: none repeat scroll 0 0 #434A54; 
+	height: 100vh;  
+  width: 110px;
+  position: fixed;
+  top: 0;
+  left: -110px;
+  bottom: 0;
+  opacity: 0.9;
+}
+.navbar>h3{
+  font-family: 'Shadows Into Light', cursive;
+  text-align: center;
+  color: white;
+}
+.sidebar-closed {
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  -moz-transition: -moz-transform .2s ease-in-out;
+  -o-transition: -o-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+}
+.sidebar-opened {
+  moz-transform: translatex(110px);
+  -webkit-transform: translatex(110px);
+  -o-transform: translatex(110px);
+  -ms-transform: translatex(110px);
+  transform: translatex(110px);
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  -moz-transition: -moz-transform .2s ease-in-out;
+  -o-transition: -o-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+}
+
+/* Input-box */
+.input-box-cnt {
+  width: 400px;
+  height: 40px;
+}
+
+.input-box {
+  width: 100%;
+  text-indent: 15px;
+  height: 40px;
+  color: #999;
+  font-size: 14px;
+  border: 2px solid #c2c5cc;
+  border-radius: 5px;
+  transition-timing-function: cubic-bezier(.3, 1.5, .6, 1);
+}
+.input-box:focus {
+  color: #333;
+  border-color: #333;
+
+}
+/* Container */
+.container{
+  margin-top: 20px;
+  cursor: pointer;
+}
+/* Button */
+.btn {
+  border: 0 none;
+  border-radius: 4px 4px 4px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  padding: 7px 10px;
+  text-transform: none;
+  text-align: center;
+}
+
+.btn.big{
+	width: 120px;
+	height: 32px;
+}
+.btn.small{
+	width: 40px;
+	height: 32px;
+}    
+    
+.btn.blue {
+  background: none repeat scroll 0 0 #4FC1E9;
+}
+.btn.darkgrey{
+	background: none repeat scroll 0 0 #434A54;
+}
+.btn.darkgrey:hover{
+  background: none repeat scroll 0 0 #656D78;
+  color: white;
+}
+.btn.blue:hover{
+  background: none repeat scroll 0 0 #4FC1E9;
+  color: white;
+}
